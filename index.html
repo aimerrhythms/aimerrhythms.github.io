@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-基于Hexo从0开始搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/07/基于Hexo从0开始搭建个人博客/" class="article-date">
+  <time datetime="2019-08-07T01:05:58.728Z" itemprop="datePublished">2019-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/07/基于Hexo从0开始搭建个人博客/">基于Hexo从0开始搭建个人博客(基于windows操作系统)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>网址：<a href="http://nodejs.org" target="_blank" rel="noopener">nodejs.org</a>  下载LTS版本，安装</p>
+<p align="left"><font>node.js安装包提供了node.js和npm包管理器</font></p>
+
+<h2 id="安装Git（将博客部署到Github上时需要安装）"><a href="#安装Git（将博客部署到Github上时需要安装）" class="headerlink" title="安装Git（将博客部署到Github上时需要安装）"></a>安装Git（将博客部署到Github上时需要安装）</h2><p>网址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git-scm.com/downloads</a>  下载Windows版本，安装</p>
+<h2 id="开始在本地搭建个人博客"><a href="#开始在本地搭建个人博客" class="headerlink" title="开始在本地搭建个人博客"></a>开始在本地搭建个人博客</h2><h3 id="打开GitBash终端，查看版本信息："><a href="#打开GitBash终端，查看版本信息：" class="headerlink" title="打开GitBash终端，查看版本信息："></a>打开GitBash终端，查看版本信息：</h3><p><img src="https://note.youdao.com/yws/api/personal/file/2A9599C3D4374C3FB6732F597806B1D5?method=download&shareKey=0d36f9b44edf983ebf4608292ac28ded" alt></p>
+<h3 id="由于国内镜像源很慢，所以先利用npm安装cnpm"><a href="#由于国内镜像源很慢，所以先利用npm安装cnpm" class="headerlink" title="由于国内镜像源很慢，所以先利用npm安装cnpm:"></a>由于国内镜像源很慢，所以先利用npm安装cnpm:</h3><p align="left"><font>npm install -g cnpm --registry=http://registry.npm.taobao.org</font></p>
+
+<h4 id="安装完成后"><a href="#安装完成后" class="headerlink" title="安装完成后"></a>安装完成后</h4><p align="left"><font>cnpm -v</font></p>
+
+<p><img src="https://note.youdao.com/yws/api/personal/file/44D761BCC24D43A9847AFB53742FDB68?method=download&shareKey=e74adb28105388ba95e0c8509d76b392" alt></p>
+<h3 id="开始正式安装Hexo："><a href="#开始正式安装Hexo：" class="headerlink" title="开始正式安装Hexo："></a>开始正式安装Hexo：</h3><p align="left"><font>cnpm install -g hexo-cli</font></p>
+
+<h4 id="安装完成后-1"><a href="#安装完成后-1" class="headerlink" title="安装完成后"></a>安装完成后</h4><p align="left"><font>hexo -v</font></p>
+
+<p><img src="https://note.youdao.com/yws/api/personal/file/07642C36C66E408AB47752A1F73E1215?method=download&shareKey=7c62a0a7f24920d4c1af7e22870cb468" alt></p>
+<h3 id="使用Hexo搭建博客"><a href="#使用Hexo搭建博客" class="headerlink" title="使用Hexo搭建博客"></a>使用Hexo搭建博客</h3><h4 id="在本地磁盘创建Blog文件夹（之后的步骤出现问题直接删除Blog文件夹重来即可）"><a href="#在本地磁盘创建Blog文件夹（之后的步骤出现问题直接删除Blog文件夹重来即可）" class="headerlink" title="在本地磁盘创建Blog文件夹（之后的步骤出现问题直接删除Blog文件夹重来即可）"></a>在本地磁盘创建Blog文件夹（之后的步骤出现问题直接删除Blog文件夹重来即可）</h4><p><img src="https://note.youdao.com/yws/api/personal/file/DC70860AAC104853A3490298DE3792E2?method=download&shareKey=3d738f212e5aeec8ca105d8893912ed1" alt></p>
+<h4 id="使用Hexo生成博客"><a href="#使用Hexo生成博客" class="headerlink" title="使用Hexo生成博客"></a>使用Hexo生成博客</h4><p align="left"><font>hexo init </font></p>
+
+<p><img src="https://note.youdao.com/yws/api/personal/file/43A9F5440DFE438D8F1A6509DC8C8EF9?method=download&shareKey=7da85bc28c42333cbe5a26a075003111" alt></p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/2CFA6DA3A04745A89B735E6385565C63?method=download&shareKey=7bb9bede14586934bf02f30cff25392c" alt></p>
+<h4 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h4><p align="left"><font>hexo s</font></p>
+
+<p><img src="https://note.youdao.com/yws/api/personal/file/6F41FA221A504EFCA84FD258827EA7F2?method=download&shareKey=9101f80aa2c7302c510352c25e61a702" alt></p>
+<h4 id="在浏览器中打开本地地址：http-localhost-4000"><a href="#在浏览器中打开本地地址：http-localhost-4000" class="headerlink" title="在浏览器中打开本地地址：http://localhost:4000"></a>在浏览器中打开本地地址：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></h4><p><img src="https://note.youdao.com/yws/api/personal/file/741099C6EB2F439BA18244DD140ACBDB?method=download&shareKey=27237eaf514a72b5773fcc6efff1603d" alt></p>
+<h2 id="这样本地博客就搭建完成了，接下来把博客部署到Github上公开使用，以后可以通过Github地址访问个人博客"><a href="#这样本地博客就搭建完成了，接下来把博客部署到Github上公开使用，以后可以通过Github地址访问个人博客" class="headerlink" title="这样本地博客就搭建完成了，接下来把博客部署到Github上公开使用，以后可以通过Github地址访问个人博客"></a>这样本地博客就搭建完成了，接下来把博客部署到Github上公开使用，以后可以通过Github地址访问个人博客</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/07/基于Hexo从0开始搭建个人博客/" data-id="cjz0n1xck0000n0v4cnj7jt60" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/07/基于Hexo从0开始搭建个人博客/">基于Hexo从0开始搭建个人博客(基于windows操作系统)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
