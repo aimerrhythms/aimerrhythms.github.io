@@ -152,19 +152,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Java入门学习——数据类型和预算符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Java入门学习——数据类型和运算符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/07/Java入门学习——数据类型和预算符/">Java入门学习——数据类型和运算符</a>
+      <a class="article-title" href="/2019/08/07/Java入门学习——数据类型和运算符/">Java入门学习1——数据类型和运算符</a>
     </h1>
   
 
         
-        <a href="/2019/08/07/Java入门学习——数据类型和预算符/" class="archive-article-date">
+        <a href="/2019/08/07/Java入门学习——数据类型和运算符/" class="archive-article-date">
   	<time datetime="2019-08-07T12:31:11.408Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-07</time>
 </a>
         
@@ -201,8 +201,7 @@
 </li>
 <li><p>科学记数法形式，如314e2    314E2    314E-2 </p>
 <p>Java语言的浮点型常数默认为double型，声明float型常量可以后加‘ F ’</p>
-<h3 id="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"><a href="#浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类" class="headerlink" title="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"></a>浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类</h3><p>  import java.math.BigDecimal;</p>
-<p>  public class Main {</p>
+<h3 id="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"><a href="#浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类" class="headerlink" title="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"></a>浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类</h3><p>  import java.math.BigDecimal;<br>  public class Main {</p>
 <pre><code>public static void main(String[] args) {
     BigDecimal bd = BigDecimal.valueOf(1.0);
     bd = bd.subtract(BigDecimal.valueOf(0.1));
@@ -219,8 +218,9 @@
 </ul>
 <h2 id="字符型变量-常量"><a href="#字符型变量-常量" class="headerlink" title="字符型变量/常量"></a>字符型变量/常量</h2><p>char ch = ‘a’;     是一个字符常量</p>
 <p>String str = “A”;  是一个字符串常量</p>
-<p>字符可以用“+”拼接</p>
-<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><h2 id="布尔类型常量-变量"><a href="#布尔类型常量-变量" class="headerlink" title="布尔类型常量/变量"></a>布尔类型常量/变量</h2><p>true or false</p>
+<p>字符和字符串可以用“+”拼接</p>
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>反斜杠配合不同的字符有不同的含义 </p>
+<h2 id="布尔类型常量-变量"><a href="#布尔类型常量-变量" class="headerlink" title="布尔类型常量/变量"></a>布尔类型常量/变量</h2><p>true or false</p>
 <h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><p>一元运算符：注意++在变量前和在变量后的区别</p>
 <p>二元运算符：</p>
 <ol>
@@ -231,10 +231,7 @@
 <h2 id="赋值运算符和拓展运算符"><a href="#赋值运算符和拓展运算符" class="headerlink" title="赋值运算符和拓展运算符"></a>赋值运算符和拓展运算符</h2><p>a += b;<br>a -= b;<br>a *= b;<br>a /= b;<br>a %= b;</p>
 <h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><ol>
 <li>==、!= 所有数据类型都可以用</li>
-<li><blockquote>
-<p>、&lt;、&gt;=、&lt;=仅针对数值类型（包括char)</p>
-</blockquote>
-</li>
+<li>&lt;、&gt;、&gt;=、&lt;=仅针对数值类型（包括char)</li>
 </ol>
 <h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><ol>
 <li>逻辑与&amp;、逻辑或|</li>
@@ -251,9 +248,11 @@
 <li>右移&gt;&gt;：右移1位相当于除以2取商</li>
 </ol>
 <h2 id="字符串连接符"><a href="#字符串连接符" class="headerlink" title="字符串连接符"></a>字符串连接符</h2><p>“+”</p>
-<h2 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h2><p>boolean?x:z;</p>
-<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><h2 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h2><p>自动类型转换指的是：容量小的数据类型可以自动转换为容量大的数据类型</p>
+<h2 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h2><p>布尔表达式?x:z;</p>
+<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><p>在以后过程中慢慢熟悉</p>
+<h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><h2 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h2><p>自动类型转换指的是：容量小的数据类型可以自动转换为容量大的数据类型</p>
 <p>整型转成浮点型时会有精度损失（int转double除外）</p>
+<p><img src="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494906265693111.png" alt></p>
 <h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><p>语法格式：(type)variable</p>
 <center><font color="red" size="14">不能在布尔类型和任何数值类型之间做强制类型转换</font></center>
 
@@ -279,7 +278,7 @@ public class ScannerTest{
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/07/Java入门学习——数据类型和预算符/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/07/Java入门学习——数据类型和运算符/">展开全文 >></a>
         </p>
       
 
