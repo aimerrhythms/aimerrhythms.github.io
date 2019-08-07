@@ -17,7 +17,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.sxt.cn/360shop/Public/admin/UEditor/20170607/1496834727293971.png">
 <meta property="og:image" content="https://www.sxt.cn/360shop/Public/admin/UEditor/20170516/1494906265693111.png">
-<meta property="og:updated_time" content="2019-08-07T14:22:41.831Z">
+<meta property="og:updated_time" content="2019-08-07T14:26:59.763Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java入门学习1——数据类型和运算符">
 <meta name="twitter:description" content="注释单行注释：// 多行注释：/* 开头，*/ 结尾 文档注释：/* 开头，/ 结尾 标识符表示类名的标识符：每个单词的首字母大写，如Man、GoodMan 表示方法和变量的标识符：第一个单词小写，从第二个单词开始首字母大写，称之为“驼峰原则”，如eat(), eatFood() 变量1.变量是”可操作的储存空间”2.变量的分类（*）局部变量：在方法或语句块内声明；  从属于方法或语句块;  生命">
@@ -202,25 +202,24 @@
 </ul>
 <h2 id="浮点型变量-常量"><a href="#浮点型变量-常量" class="headerlink" title="浮点型变量/常量"></a>浮点型变量/常量</h2><p>Java浮点类型常量有两种表示形式:</p>
 <ul>
-<li><p>十进制数形式，例如:3.14    314.0    0.314 </p>
-</li>
-<li><p>科学记数法形式，如314e2    314E2    314E-2 </p>
-<p>Java语言的浮点型常数默认为double型，声明float型常量可以后加‘ F ’</p>
-<h3 id="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"><a href="#浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类" class="headerlink" title="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"></a>浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类</h3><p>  import java.math.BigDecimal;<br>  public class Main {</p>
-<pre><code>public static void main(String[] args) {
-    BigDecimal bd = BigDecimal.valueOf(1.0);
-    bd = bd.subtract(BigDecimal.valueOf(0.1));
-    bd = bd.subtract(BigDecimal.valueOf(0.1));
-    bd = bd.subtract(BigDecimal.valueOf(0.1));
-    bd = bd.subtract(BigDecimal.valueOf(0.1));
-    bd = bd.subtract(BigDecimal.valueOf(0.1));
-    System.out.println(bd);//0.5
-    System.out.println(1.0 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1);//0.5000000000000001
-}</code></pre><p>  }</p>
-<center><font color="red" size="14">切记：不要使用浮点数进行比较！需要比较要使用BigDecimal类</font></center>
-
-</li>
+<li>十进制数形式，例如:3.14    314.0    0.314 </li>
+<li>科学记数法形式，如314e2    314E2    314E-2 </li>
 </ul>
+<p>Java语言的浮点型常数默认为double型，声明float型常量可以后加‘ F ’</p>
+<h3 id="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"><a href="#浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类" class="headerlink" title="浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类"></a>浮点类型float，double的数据不适合在不容许舍入误差的金融计算领域。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类</h3><pre><code>import java.math.BigDecimal;
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal bd = BigDecimal.valueOf(1.0);
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        bd = bd.subtract(BigDecimal.valueOf(0.1));
+        System.out.println(bd);//0.5
+        System.out.println(1.0 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1);//0.5000000000000001
+    }
+}</code></pre><center><font color="red" size="14">切记：不要使用浮点数进行比较！需要比较要使用BigDecimal类</font></center>
+
 <h2 id="字符型变量-常量"><a href="#字符型变量-常量" class="headerlink" title="字符型变量/常量"></a>字符型变量/常量</h2><p>char ch = ‘a’;     是一个字符常量</p>
 <p>String str = “A”;  是一个字符串常量</p>
 <p>字符和字符串可以用“+”拼接</p>
